@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canine Care - Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images/canine-care-logo.png" alt="canine-care-logo">
+        </div>
+        <h1>Join the Canine Care!</h1>
+        
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required minlength="8">
+            </div>
+
+            <div class="form-group">
+                <label for="dog-name">Dog's Name</label>
+                <input type="text" id="dog-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="breed">Dog Breed</label>
+                <input type="text" id="breed" list="breeds" required>
+                <datalist id="breeds">
+                    <option value="German Shepherd">
+                    <option value="Doberman Pinschers">
+                    <option value="Poodle">
+                    <option value="Chihuahua">
+                    <option value="PitBull">
+                    <option value="Boxer">
+                    <option value="Mastiff">
+                    <option value="Siberian Husky">
+                    <option value="Pomeranians">
+                    <option value="Dachsunds">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Dog's Age</label>
+                <input type="number" id="age" min="0" max="30" required>
+            </div>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <div class="social-signup">
+            <p>Or sign up with</p>
+            <div class="social-buttons">
+                <button class="social-btn">
+                    <i class="fab fa-google" style="color: #db4437;"></i>
+                    Google
+                </button>
+                <button class="social-btn">
+                    <i class="fab fa-facebook" style="color: #1877f2;"></i>
+                    Facebook
+                </button>
+            </div>
+        </div>
+
+        <div class="login-link">
+            Already have an account? <a href="#">Log in</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Sanni Al-ameen. All rights reserved.</p>
+</footer>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for signing up!');
+        });
+    </script>
+</body>
+</html>

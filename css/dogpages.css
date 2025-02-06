@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #212529;
+    --secondary-color: #2788ae;
+    --dark-color: #003380;
+    --light-color: #d2d7d8;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:var(--secondary-color);
+}
+
+.header {
+    text-align: center;
+    color: var(--light-color);
+}
+h1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--secondary-color);
+}
+
+.breed-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.fact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fact-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+/* Projects Section */
+.projects {
+    padding: 2rem 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+li a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+
+
+
+
+/* footer */
+footer {
+    
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .social-links {
+    margin-bottom: 1rem;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-color);
+  }
